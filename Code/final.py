@@ -311,7 +311,7 @@ def text_mode(cam):
 		return 0
 
 def recognize():
-	cam = cv2.VideoCapture(1)
+	cam = cv2.VideoCapture(0)
 	if cam.read()[0]==False:
 		cam = cv2.VideoCapture(0)
 	text = ""
