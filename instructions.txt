@@ -1,0 +1,11 @@
+1. First run set_hand_histogram.py, keep a clear background and press C to capture (only the palm) and S to save.
+2. Then create_gestures.py, press c to capture, once done Ctrl C to exit, take a shit load of photos
+3. Rotate_images.py does not work properly yet.
+4. Then run load_images.py
+5. Then run cnn_model_train.py
+6. Then run final.py
+
+Set Hand Histogram: Run set_hand_histogram.py (mentioned in the README.md) to calibrate the application to your hand's skin tone under your lighting conditions. You can also use the hist file already present in the Code directory.
+Create Gestures: Run Code\create_gestures.py. This script will use your webcam to capture images for different sign language gestures. It will prompt you for a gesture number and name, then save the captured images in the gestures folder.
+Augment Data: Run Code\Rotate_images.py to flip the captured images, effectively doubling your dataset size.
+Load and Split Data: Run Code\load_images.py. This script processes all images in the gestures folder and splits them into training, validation, and test sets, saving them as pickled files (e.g., train_images, train_labels).

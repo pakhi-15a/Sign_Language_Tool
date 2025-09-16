@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated data files
+gestures/
+train_images
+train_labels
+val_images
+val_labels
+test_images
+test_labels
+hist
+gesture_db.db
+full_img.jpg
+
+# Trained models
+*.keras
+*.h5
+
+# IDE settings
+.vscode/
+.idea/
